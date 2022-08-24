@@ -126,8 +126,7 @@ Output:
 This can be used with `timeit`, like this:
 
 ```python
-# Checking the more efficient way to sort a list of integers:
-# bubble sort or merge sort?
+# Checking the more efficient way to sort a list of integers: bubble sort or merge sort?
 
 import timeit
 from random_typing import List, Int
