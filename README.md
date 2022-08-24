@@ -126,12 +126,12 @@ Output:
 This can be used with `timeit`, like this:
 
 ```python
-# Checking the more efficient way to sort a list of integers: bubble sort or merge sort?
+# Checking whether bubble sort is quicker than merge sort
 
 import timeit
 from random_typing import List, Int
 
-lengths = list(range(1, 1000))
+lengths = list(range(1, 100))
 times_bubble = []
 times_merge = []
 
@@ -139,10 +139,10 @@ i = Int(1, 100)
 
 for length in lengths:
     l = List(i, length)
-    times_bubble.append(timeit('bubble_sort(lst)',
-                        setup='from __main__ import bubble_sort',
-                        globals={'lst': next(l)}, number=1))
-    times_merge.append(timeit('merge_sort(lst)',
-                       setup='from __main__ import merge_sort',
-                       globals={'lst': next(l)}, number=1))
+    times_bubble.append(timeit.timeit('BubbleSort(lst)',
+                                      globals={'lst': next(l), 'BubbleSort': BubbleSort},
+                                      number=1))
+    times_merge.append(timeit.timeit('MergeSort(lst)',
+                                     globals={'lst': next(l), 'MergeSort': MergeSort},
+                                     number=1))
 ```
