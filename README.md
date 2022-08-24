@@ -140,6 +140,10 @@ i = Int(1, 100)
 
 for length in lengths:
     l = List(i, length)
-    times_bubble.append(timeit('bubble_sort(lst)', setup='from __main__ import bubble_sort', globals={'lst': next(l)}, number=1))
-    times_merge.append(timeit('merge_sort(lst)', setup='from __main__ import merge_sort', globals={'lst': next(l)}, number=1))
+    times_bubble.append(timeit('bubble_sort(lst)',
+                        setup='from __main__ import bubble_sort',
+                        globals={'lst': next(l)}, number=1))
+    times_merge.append(timeit('merge_sort(lst)',
+                       setup='from __main__ import merge_sort',
+                       globals={'lst': next(l)}, number=1))
 ```
