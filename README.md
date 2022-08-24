@@ -131,7 +131,7 @@ This can be used with `timeit`, like this:
 import timeit
 from random_typing import List, Int
 
-lengths = list(range(1, 100))
+lengths = list(range(1, 1000))
 times_bubble = []
 times_merge = []
 
