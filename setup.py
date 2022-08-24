@@ -1,17 +1,17 @@
 from setuptools import setup, find_packages
 
-long_description = 'Default classes - read the docs at https://www.github.com/nayakrujul/default-class'
+long_description = 'Random Typing - most commonly used with timeit. Read the documentation at https://github.com/nayakrujul/typing-tools/'
 
 setup(
-  name = 'default-class',
-  version = '1.1',
+  name = 'random-typing',
+  version = '0.1',
   license='Apache',
-  description = 'Default classes',
+  description = 'Random Typing',
   author = 'Rujul Nayak',
   author_email = 'rujulnayak@outlook.com',
-  url = 'https://github.com/nayakrujul/default-class',
-  download_url = 'https://github.com/nayakrujul/default-class/archive/refs/tags/v_01.tar.gz',
-  keywords = ['class', 'default'],
+  url = 'https://github.com/nayakrujul/typing-tools',
+  download_url = 'https://github.com/nayakrujul/typing-tools/archive/refs/tags/v_01.tar.gz',
+  keywords = ['random', 'typing', 'tools'],
   install_requires=[
       ],
   classifiers=[
